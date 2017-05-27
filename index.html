@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- <script src="js/jquery-items.js" charset="utf-8"></script>
+        <script src="js/functions.js" charset="utf-8"></script> -->
+        <script src="itemsService.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+       <div style="text-align: center">
+           <h1>To Do List</h1>
+       </div>
+
+    <div style="margin: 30px" class="container">
+
+        <!-- <div class="error-container" id="error-container">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="error" id="error-message">Invalid to-do item.</span>
+       </div> -->
+
+        <div>
+           <b> Add New Item: </b>
+           <input type="text" name="item" id="item-box" style="margin-left: 20px; margin-right: 20px" size="50" />
+           <input type="button" id="submit" name="submit" value="Submit" onclick="addNewItem()"></input>
+       </div>
+
+       <div style="margin-top: 20px;">
+          <b>Pending Items</b>
+          <ul id="pending-items">
+          </ul>
+       </div>
+
+       <div>
+           <b>Done Items</b>
+           <ul id="done-items">
+           </ul>
+        </div>
+    </div>
+
+     <script>
+
+      retrieveAllItems()
+
+    </script>
+    </body>
+</html>
