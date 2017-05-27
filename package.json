@@ -1,8 +1,0 @@
-{
-  "name": "todo-list",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "~4.10.2"
-  }
-}
